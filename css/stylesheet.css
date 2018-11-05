@@ -1,0 +1,53 @@
+body{
+	font-family: sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+#grocerylist article{
+	margin-bottom: 1em;
+	border: orange solid 1px;
+	border-radius: .5em;
+	padding: .1em 1em;
+}
+
+@media screen and (min-width: 800px){
+	body{
+		width: 70vw;
+		margin: auto;
+	}
+	#grocerylist{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1em;
+	}
+}
+
+#grocerylist a, #categories-nav a, body>a{
+	display: inline-block;
+	margin-top: .5em;
+	text-decoration: none;
+	padding: .3em 1em;
+	border-radius: .5em;
+	background-color: skyblue;
+	color: white;
+}
+
+#categories-nav a{
+	margin: 1em .2em;
+	text-transform: capitalize;
+}
+
+#grocerylist a:hover, #cat-nav a:hover, #details-main>article>a:hover{
+	background-color: orange;
+}
+
+#grocerydetail img{
+	border: 1px solid orange;
+	padding: 1em;
+	border-radius: 1em;
+	max-height:60vh;
+	min-height:60vh;
+}
